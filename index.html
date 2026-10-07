@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Ragab | Data Analyst & CS/AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Ahmed Ragab Abd El monem - Junior Data Analyst, CS & AI Student, and .NET Developer. Expertise in Power BI, Python, SQL, Machine Learning, and Web Development.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Chart.js for Live Data Analytics Showcase -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="navbar">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Ahmed<span class="logo-accent">.Ragab</span><span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-chart-diagram"></i> Projects</a></li>
+                <li class="nav-item"><a href="#analytics-demo" class="nav-link"><i class="fa-solid fa-chart-pie"></i> Analytics Lab</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Open for Junior Data Analyst & Internship Roles
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Ahmed Ragab</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-description">
+                    Computer Science & Artificial Intelligence student passionate about uncovering actionable insights from data, building predictive machine learning models, and engineering robust software applications.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-gradient">
+                        <i class="fa-solid fa-rocket"></i> Explore Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-comments"></i> Get In Touch
+                    </a>
+                    <a href="https://github.com/AhmedRagab333" target="_blank" class="btn btn-icon-only" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ahmed-ragab-raslan-182163296" target="_blank" class="btn btn-icon-only" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <!-- Live Metrics Counter -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-chart-line stat-icon"></i>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Dashboards & Analysis</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-brain stat-icon"></i>
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">ML Models Trained</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-database stat-icon"></i>
+                        <div class="stat-number" data-target="100" data-suffix="K+">0</div>
+                        <div class="stat-label">Data Rows Cleaned</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-certificate stat-icon"></i>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Diplomas (DEPI & NTI)</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="Scroll Down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+                <h2 class="section-title">Turning Raw Data into Strategic Value</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card main-about">
+                    <div class="about-avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-box">
+                            <i class="fa-solid fa-user-astronaut avatar-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Ahmed Ragab Abd El monem</h3>
+                    <p class="about-role">Junior Data Analyst | CS & AI Student | .NET Developer</p>
+                    <p class="about-text">
+                        I am a Computer Science & Artificial Intelligence student at <strong>Beni Suef National University</strong> with hands-on expertise in Data Cleaning, Exploratory Data Analysis (EDA), Predictive Machine Learning, and Interactive Dashboard Development using <strong>Power BI, Tableau, Python, and SQL</strong>.
+                    </p>
+                    <p class="about-text">
+                        Through rigorous training programs at the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> (.NET Track) and the <strong>National Telecommunication Institute (NTI)</strong> (Advanced Data Analytics), I have developed a multi-disciplinary mindset bridging data engineering, full-stack web architecture, and business intelligence.
+                    </p>
+                    <div class="about-info-tags">
+                        <div class="info-tag"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</div>
+                        <div class="info-tag"><i class="fa-solid fa-graduation-cap"></i> Exp. Grad: 2027</div>
+                        <div class="info-tag"><i class="fa-solid fa-award"></i> Grade: Very Good</div>
+                        <div class="info-tag"><i class="fa-solid fa-language"></i> Arabic (Native), English</div>
+                    </div>
+                </div>
+
+                <div class="about-card education-card">
+                    <div class="card-header-icon">
+                        <i class="fa-solid fa-school"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-bullet"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - 2027</span>
+                            <h4>B.Sc. in Computer Science & Artificial Intelligence</h4>
+                            <p class="university-name">Beni Suef National University</p>
+                            <p class="timeline-desc">Faculty of Computers and Information & AI. Academic Grade: <strong>Very Good</strong>.</p>
+                            <div class="coursework-tags">
+                                <span>Data Structures</span>
+                                <span>Algorithms</span>
+                                <span>Machine Learning</span>
+                                <span>Database Systems</span>
+                                <span>AI Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-code"></i> Technical Stack</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-filter">
+                <button class="skill-tab active" data-filter="all">All Skills</button>
+                <button class="skill-tab" data-filter="data">Data Analysis & BI</button>
+                <button class="skill-tab" data-filter="ml">Machine Learning & AI</button>
+                <button class="skill-tab" data-filter="prog">Programming & DB</button>
+                <button class="skill-tab" data-filter="tools">Tools & Web</button>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Card 1: Data Analysis -->
+                <div class="skill-card" data-category="data">
+                    <div class="skill-icon-box cyan"><i class="fa-solid fa-chart-column"></i></div>
+                    <h3>Power BI & DAX</h3>
+                    <p>Dashboard creation, DAX queries, data modeling, & interactive reporting.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <div class="skill-card" data-category="data">
+                    <div class="skill-icon-box blue"><i class="fa-solid fa-table"></i></div>
+                    <h3>Excel & Power Query</h3>
+                    <p>Advanced formulas, VLOOKUP/XLOOKUP, Pivot Tables, ETL & Data Cleaning.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+
+                <div class="skill-card" data-category="data">
+                    <div class="skill-icon-box orange"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Tableau</h3>
+                    <p>Visual storytelling, calculated fields, worksheets, & interactive dashboards.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <div class="skill-card" data-category="prog">
+                    <div class="skill-icon-box green"><i class="fa-brands fa-python"></i></div>
+                    <h3>Python & Data Science</h3>
+                    <p>Pandas, NumPy, Matplotlib, Seaborn, Automated Data Wrangling & EDA.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <div class="skill-card" data-category="prog">
+                    <div class="skill-icon-box purple"><i class="fa-solid fa-database"></i></div>
+                    <h3>SQL & SQL Server</h3>
+                    <p>Complex Queries, JOINS, Subqueries, Aggregations, Views, & Schema Design.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 86%;"></div>
+                    </div>
+                    <span class="skill-percentage">86%</span>
+                </div>
+
+                <div class="skill-card" data-category="ml">
+                    <div class="skill-icon-box pink"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Scikit-Learn & Machine Learning</h3>
+                    <p>Logistic Regression, Random Forest, SVM, Confusion Matrix & Model Evaluation.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 82%;"></div>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                </div>
+
+                <div class="skill-card" data-category="prog">
+                    <div class="skill-icon-box indigo"><i class="fa-solid fa-code"></i></div>
+                    <h3>C# & .NET Core</h3>
+                    <p>.NET Core Web API, MVC, OOP, Unit Testing, & Entity Framework.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon-box yellow"><i class="fa-brands fa-docker"></i></div>
+                    <h3>Git, Docker & Linux</h3>
+                    <p>Version control, Docker containerization, Jupyter Notebook, Linux Terminal.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon-box red"><i class="fa-brands fa-html5"></i></div>
+                    <h3>HTML, CSS & JavaScript</h3>
+                    <p>Responsive design, DOM Manipulation, Chart integrations, Glassmorphism UI.</p>
+                    <div class="skill-progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Diplomas Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience & Training</span>
+                <h2 class="section-title">Professional Training & Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- NTI Experience -->
+                <div class="timeline-card left">
+                    <div class="timeline-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="timeline-box">
+                        <div class="badge-tag">NTI Certification</div>
+                        <h3>NTI - Advanced Data Analytics Track</h3>
+                        <p class="institution">National Telecommunication Institute (NTI)</p>
+                        <ul class="experience-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Mastered Data Cleaning, Wrangling, and Transformation using Power Query and Python.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Created multi-page interactive dashboards in Power BI and Tableau for executive decision-making.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Applied advanced Excel modeling, dynamic KPI tracking, and statistical hypothesis testing.</li>
+                        </ul>
+                        <div class="tech-pills">
+                            <span>Power BI</span>
+                            <span>Tableau</span>
+                            <span>Excel</span>
+                            <span>Power Query</span>
+                            <span>EDA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEPI Experience -->
+                <div class="timeline-card right">
+                    <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="timeline-box">
+                        <div class="badge-tag accent-tag">DEPI Round 5</div>
+                        <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                        <p class="institution">Full Stack .NET Development Track</p>
+                        <ul class="experience-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Built full-stack web applications with C# .NET Core MVC & RESTful Web APIs.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Designed relational database schemas in SQL Server with EF Core and T-SQL.</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Applied Docker containerization, unit testing, and Git collaborative workflow on Capstone Project.</li>
+                        </ul>
+                        <div class="tech-pills">
+                            <span>C# .NET Core</span>
+                            <span>SQL Server</span>
+                            <span>Web API</span>
+                            <span>Docker</span>
+                            <span>Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-alt">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world data analytics, machine learning, and software solutions.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Project Category Filter -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-project-filter="all">All Projects</button>
+                <button class="filter-btn" data-project-filter="analytics">Data Analytics & BI</button>
+                <button class="filter-btn" data-project-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-project-filter="net">.NET & Web</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: E-Commerce Churn -->
+                <div class="project-card" data-category="ml analytics">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn btn-sm btn-light open-modal" data-modal="modal-1"><i class="fa-solid fa-eye"></i> View Details</button>
+                        </div>
+                        <div class="project-img-placeholder gradient-1">
+                            <i class="fa-solid fa-user-minus project-bg-icon"></i>
+                            <span class="project-badge">ML & Analytics</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Customer Churn Prediction & Retention Analytics</h3>
+                        <p class="project-desc">
+                            Analyzed 50K+ customer records to identify churn drivers. Built predictive ML models (Random Forest, SVM) reaching 94.2% accuracy and an interactive Power BI dashboard for executive retention strategies.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>Power BI</span>
+                            <span>Random Forest</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AhmedRagab333" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code Repository</a>
+                            <button class="project-link-btn open-modal" data-modal="modal-1"><i class="fa-solid fa-circle-info"></i> Insights</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Global Financial Dashboard -->
+                <div class="project-card" data-category="analytics">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn btn-sm btn-light open-modal" data-modal="modal-2"><i class="fa-solid fa-eye"></i> View Details</button>
+                        </div>
+                        <div class="project-img-placeholder gradient-2">
+                            <i class="fa-solid fa-chart-pie project-bg-icon"></i>
+                            <span class="project-badge">Power BI & SQL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Global Sales & Financial Intelligence Dashboard</h3>
+                        <p class="project-desc">
+                            Comprehensive multi-page Power BI dashboard detailing sales revenue, net profit margin, geographical breakdown, customer demographic insights, and dynamic DAX KPI metrics.
+                        </p>
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>SQL Server</span>
+                            <span>Excel</span>
+                            <span>Power Query</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AhmedRagab333" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Dashboard</a>
+                            <button class="project-link-btn open-modal" data-modal="modal-2"><i class="fa-solid fa-circle-info"></i> Insights</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Healthcare Risk Predictor -->
+                <div class="project-card" data-category="ml net">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn btn-sm btn-light open-modal" data-modal="modal-3"><i class="fa-solid fa-eye"></i> View Details</button>
+                        </div>
+                        <div class="project-img-placeholder gradient-3">
+                            <i class="fa-solid fa-heart-pulse project-bg-icon"></i>
+                            <span class="project-badge">AI & Healthcare</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Healthcare Risk Prediction System</h3>
+                        <p class="project-desc">
+                            Machine learning web solution evaluating patient health data to assess cardiovascular & diabetes risks. Features feature importance analysis, confusion matrix evaluation, and a clean web UI.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Logistic Regression</span>
+                            <span>SVM</span>
+                            <span>Flask</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AhmedRagab333" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code Repository</a>
+                            <button class="project-link-btn open-modal" data-modal="modal-3"><i class="fa-solid fa-circle-info"></i> Insights</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Enterprise .NET Management -->
+                <div class="project-card" data-category="net">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn btn-sm btn-light open-modal" data-modal="modal-4"><i class="fa-solid fa-eye"></i> View Details</button>
+                        </div>
+                        <div class="project-img-placeholder gradient-4">
+                            <i class="fa-solid fa-layer-group project-bg-icon"></i>
+                            <span class="project-badge">Full Stack .NET</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Enterprise Employee & Inventory Management System</h3>
+                        <p class="project-desc">
+                            Full-stack .NET Core Web API application featuring JWT role-based authentication, Entity Framework Core, SQL Server relational schema, Unit Testing, and Dockerized deployment.
+                        </p>
+                        <div class="project-tags">
+                            <span>C# .NET Core</span>
+                            <span>SQL Server</span>
+                            <span>Web API</span>
+                            <span>Docker</span>
+                            <span>EF Core</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AhmedRagab333" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Code Repository</a>
+                            <button class="project-link-btn open-modal" data-modal="modal-4"><i class="fa-solid fa-circle-info"></i> Insights</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Analytics Lab Demo -->
+        <section id="analytics-demo" class="section">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-flask"></i> Interactive Showcase</span>
+                <h2 class="section-title">Live Data Analytics Lab</h2>
+                <p class="section-subtitle">Interact with real-time data visualizer powered by Chart.js</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="analytics-container">
+                <div class="analytics-controls">
+                    <div class="control-group">
+                        <label for="chart-dataset-select"><i class="fa-solid fa-database"></i> Choose Dataset:</label>
+                        <select id="chart-dataset-select" class="form-select">
+                            <option value="sales">Quarterly Sales Revenue ($K)</option>
+                            <option value="churn">Customer Churn Rate by Segment (%)</option>
+                            <option value="ml_acc">ML Algorithm Model Accuracy (%)</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="chart-type-select"><i class="fa-solid fa-chart-simple"></i> Chart Type:</label>
+                        <select id="chart-type-select" class="form-select">
+                            <option value="bar">Bar Chart</option>
+                            <option value="line">Line Chart</option>
+                            <option value="doughnut">Doughnut Chart</option>
+                        </select>
+                    </div>
+                    <button id="randomize-data-btn" class="btn btn-secondary btn-sm">
+                        <i class="fa-solid fa-arrows-rotate"></i> Simulate Live Data Stream
+                    </button>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas id="interactive-chart"></canvas>
+                </div>
+
+                <div class="analytics-summary-cards">
+                    <div class="analytics-stat">
+                        <span class="stat-title">Current Peak Metric</span>
+                        <span class="stat-value" id="demo-peak">$94.5K</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-title">Average Value</span>
+                        <span class="stat-value" id="demo-avg">68.4%</span>
+                    </div>
+                    <div class="analytics-stat">
+                        <span class="stat-title">Data Status</span>
+                        <span class="stat-value text-success"><i class="fa-solid fa-circle-check"></i> Cleaned & Verified</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+                <h2 class="section-title">Let's Work Together!</h2>
+                <p class="section-subtitle">Interested in hiring me or collaborating on data projects? Reach out anytime!</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-intro">Feel free to contact me via email, phone, or LinkedIn. I am actively looking for Junior Data Analyst opportunities and Data Engineering / Analytics internships.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:ahjf122@gmail.com" class="contact-value">ahjf122@gmail.com</a>
+                        </div>
+                        <button class="copy-btn" data-copy="ahjf122@gmail.com" title="Copy Email"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:01270413307" class="contact-value">+20 127 041 3307</a>
+                        </div>
+                        <button class="copy-btn" data-copy="01270413307" title="Copy Phone"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-text">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Cairo / Beni Suef, Egypt</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links-box">
+                        <h4>Connect Socially</h4>
+                        <div class="social-btns">
+                            <a href="https://linkedin.com/in/ahmed-ragab-raslan-182163296" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/AhmedRagab333" target="_blank" class="social-btn github" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="e.g. Sarah Connor">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" required placeholder="e.g. sarah@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" required placeholder="Job Opportunity / Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" required placeholder="Hello Ahmed, I'd like to discuss..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gradient btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>Ahmed<span class="logo-accent">.Ragab</span><span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Junior Data Analyst & CS/AI Student passionate about data analytics, machine learning, and clean code.</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; <span id="current-year"></span> Ahmed Ragab. Crafted with <i class="fa-solid fa-heart text-danger"></i> & Modern Web Standards.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals for Project Insights -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3><i class="fa-solid fa-user-minus"></i> E-Commerce Churn Prediction & Retention Analytics</h3>
+            <div class="modal-body">
+                <p><strong>Business Context:</strong> Customer retention is 5x cheaper than acquiring new customers. The objective was to predict customer churn in an e-commerce platform and isolate high-risk indicators.</p>
+                <h4>Key Technical Workflow:</h4>
+                <ul>
+                    <li>Handled missing values and outlier detection using Pandas and NumPy.</li>
+                    <li>Executed Exploratory Data Analysis (EDA) uncovering key correlation between purchase frequency, discount usage, and customer churn.</li>
+                    <li>Trained Random Forest, Support Vector Machines (SVM), and Logistic Regression classifiers.</li>
+                    <li>Achieved <strong>94.2% Accuracy</strong> with 0.91 F1-score on Random Forest model.</li>
+                    <li>Built an executive Power BI dashboard with DAX measures to simulate retention revenue save rate.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3><i class="fa-solid fa-chart-pie"></i> Global Sales & Financial Intelligence Dashboard</h3>
+            <div class="modal-body">
+                <p><strong>Business Context:</strong> Enterprise leadership needed a unified BI dashboard to monitor multi-region sales revenue, product margin performance, and sales rep performance.</p>
+                <h4>Key Technical Workflow:</h4>
+                <ul>
+                    <li>Extracted and transformed multi-source raw Excel & SQL Server data using Power Query.</li>
+                    <li>Formulated complex DAX formulas (YoY Growth, Rolling 12-Month Sales, Margin Percentages).</li>
+                    <li>Designed an intuitive star-schema data model minimizing query response latency.</li>
+                    <li>Implemented interactive drill-through pages for granular regional and product breakdown.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3><i class="fa-solid fa-heart-pulse"></i> Smart Healthcare Risk Prediction System</h3>
+            <div class="modal-body">
+                <p><strong>Business Context:</strong> AI-assisted diagnostic helper designed for preliminary risk assessment of cardiovascular and diabetic conditions.</p>
+                <h4>Key Technical Workflow:</h4>
+                <ul>
+                    <li>Normalized clinical features (blood pressure, cholesterol, BMI, glucose).</li>
+                    <li>Evaluated confusion matrix, ROC-AUC curves, and precision-recall trade-offs.</li>
+                    <li>Deployed web-based prediction interface with real-time risk gauges.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3><i class="fa-solid fa-layer-group"></i> Enterprise Employee & Inventory System</h3>
+            <div class="modal-body">
+                <p><strong>Business Context:</strong> Built during DEPI Round 5 to provide a scalable web enterprise solution for managing employee roles, department allocations, and stock inventory.</p>
+                <h4>Key Technical Workflow:</h4>
+                <ul>
+                    <li>Architected with C# .NET Core RESTful Web API and Entity Framework Core.</li>
+                    <li>Integrated JWT authentication and role-based access control.</li>
+                    <li>Packaged using Docker containers for seamless cross-platform deployment.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
